@@ -5,26 +5,23 @@ import ColorTabs from "./Navbar/NavBar";
 import { Latest } from "./Components/Latest";
 
 function App() {
-  
-
   return (
     <>
-    <ColorTabs/>
-    <div className="container">
-      
-      <div className="inputContainer">
-        <Latest/>
+      <ColorTabs/>
+      <div className="container">
+        <div className="inputContainer">
+          <Latest url="http://localhost:8888/api/Latest/:modelName/latestinputs" label="Latest Inputs"/>
+        </div>
+        <div className="inputContainer">
+          <Latest url="http://localhost:8888/api/Latest/:modelName/latestoutputs" label="Latest Outputs"/>
+        </div>
+        <div className="inputContainer">
+          <Latest url="http://localhost:8888/api/Latest/:modelName/lateststates" label="Latest States"/>
+        </div>
       </div>
-      <div className="inputContainer">
-        <Latest/>
-      </div>
-      <div className="inputContainer">
-        <Latest/>
-      </div>
-    </div>
-    <div className="container2"></div>
     </>
   );
 }
 
 export default App;
+
