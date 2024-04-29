@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <ColorTabs/>
-    <div className="latestContainer">
+    <div className="container">
       
       <div className="inputContainer">
         <Latest/>

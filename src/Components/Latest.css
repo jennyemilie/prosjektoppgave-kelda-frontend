@@ -1,41 +1,37 @@
-.button {
-    display: block;
-    width: 50%;
-    padding: 3px;
-    font-size: 13px;
-    background: #d0d0d5;
-    border: 1.5px solid #3b3b4f;
-  }
-  
-.button:hover {background-color: #E2DFD2}
-  
-.button:active {
-  background-color: #3b3b4f;
-  box-shadow: 0 2px #666;
-  transform: translateY(4px);
-}
-  
-.inputContainer{
-  width: 200px;
-  display: flex;
-  background-color: red;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
+
 
 .container {
-  display: flex;
-  gap: 10px;
-  padding: 15px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: nowrap;
 }
 
-.inputContainer, .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.inputContainer {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 200px; 
+  margin: 0 10px; 
+  padding: 10px;
+  background-color: #f0f0f0; 
+}
+
+.button {
+  width: 80%; 
+  padding: 8px;
+  margin-top: 10px; 
+  background-color: #d0d0d5;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #E2DFD2;
+}
+
+.button:active {
+  background-color: #3b3b4f;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
