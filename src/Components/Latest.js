@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from "react";
-import "./Latest.css";
+import "./Component.css";
 
 
 export const Latest = ({ url, label }) => {
@@ -23,14 +23,16 @@ export const Latest = ({ url, label }) => {
   };
 
   return (
-    <div className="inputContainer">
+    <div className="wrapper">
       <h1>{label}</h1>
+      <div className="inputContainer">
       <input
         type="text"
         value={modelName}
         onChange={e => setModelName(e.target.value)}
         placeholder="Enter model name"
       />
+      </div>
       <button className="button" onClick={fetchData}>Search Model</button>
       {data.length > 0 && (
         <div className="output">
