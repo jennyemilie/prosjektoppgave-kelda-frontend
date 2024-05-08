@@ -1,0 +1,42 @@
+
+
+.container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.wrapper {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 200px; 
+  min-height: 200px;
+  border: 0.5px;
+  border-style: solid;
+  padding: 14px;
+  border-radius: 6px;
+  
+}
+
+h1{
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+h2{
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left !important; 
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
